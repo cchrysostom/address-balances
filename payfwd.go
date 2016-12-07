@@ -9,6 +9,7 @@ import (
 	"log"
 	"net/http"
 	"os"
+	"time"
 
 	_ "github.com/mattn/go-sqlite3"
 )
@@ -178,6 +179,7 @@ func main() {
 			}
 		}
 
+		time.Sleep(time.Second)
 	}
 	Info.Println("Total address count:", getCount)
 }
