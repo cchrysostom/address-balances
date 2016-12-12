@@ -157,14 +157,10 @@ func main() {
 
 		if existsCount > 0 {
 			Info.Println("Updating address", addressInfo.Address, "balance", addressInfo.Balance)
-			updResult, updateErr := updateBalStmt.Exec(addressInfo.Address, addressInfo.Balance)
+			_, updateErr := updateBalStmt.Exec(addressInfo.Address, addressInfo.Balance)
 			if updateErr != nil {
 				Error.Println(updateErr)
 				break
-			}
-			rowsUpdated, _ := updResult.RowsAffected()
-			if rowsUpdated < 1 {
-				Error.Println(fmt.Sprintf("Failed to update AddressBalance for address, %s.", addressInfo.Address))
 			}
 		} else {
 			Info.Println("Inserting new address", addressInfo.Address, "balance", addressInfo.Balance)
