@@ -1,0 +1,12 @@
+hash: b87e09f44885990a6741c8442255ca2c912104ff8869a6b671067167d767f880
+updated: 2016-12-15T22:16:57.38537005-07:00
+imports:
+- name: github.com/kelseyhightower/envconfig
+  version: 9aca109c9aec4633fced9717c4a09ecab3d33111
+- name: github.com/mattn/go-sqlite3
+  version: ca5e3819723d8eeaf170ad510e7da1d6d2e94a08
+- name: golang.org/x/net
+  version: 45e771701b814666a7eb299e6c7a57d0b1799e91
+  subpackages:
+  - context
+testImports: []

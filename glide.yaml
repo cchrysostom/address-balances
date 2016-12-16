@@ -1,0 +1,6 @@
+package: github.com/cchrysostom/address-balances
+import:
+- package: github.com/kelseyhightower/envconfig
+  version: ^1.2.0
+- package: github.com/mattn/go-sqlite3
+  version: ^1.2.0
